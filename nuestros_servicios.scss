@@ -581,10 +581,9 @@ h1{
     .imgBox{
         overflow: hidden;
         position: relative;
-        margin-left: -20px;
         
         :hover{
-            transform: scale(1.2);
+            transform: scale(1.0);
         }
     }
 

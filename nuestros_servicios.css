@@ -636,12 +636,11 @@ h1 {
 .imgBox {
   overflow: hidden;
   position: relative;
-  margin-left: -20px;
 }
 
 .imgBox :hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 hr.solid {
