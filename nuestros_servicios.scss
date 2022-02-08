@@ -298,13 +298,11 @@ h1{
 
 
       
-.footer{
+footer{
   color: #fff;
-  font-family: 'Poppins', sans-serif;
-  margin-left: 5%;
   line-height: 1em;
   text-align: center;
-  text-decoration: none;
+ 
 }
 
 ///////////////////////////////
@@ -618,10 +616,12 @@ h1{
 .footer{
   font-family: 'Roboto Mono', monospace;
   margin-left: 5%;
-  color: #565656;
   line-height: 1em;
   text-align: center;
   text-decoration: none;
+  a{
+    color:#336699;
+    }
 }
 
 p{
@@ -630,6 +630,9 @@ font-size: 15px;
 text-align: center;
 }
 ///////////////////////////////
+
+
+ 
 
 @media (max-width: 991px)
 {

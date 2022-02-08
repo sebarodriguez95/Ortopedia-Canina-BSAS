@@ -325,13 +325,10 @@ hr.rounded {
   margin-left: 45%;
 }
 
-.footer {
+footer {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
-  margin-left: 5%;
   line-height: 1em;
   text-align: center;
-  text-decoration: none;
 }
 
 @media (max-width: 991px) {
@@ -666,10 +663,13 @@ hr.rounded {
 .footer {
   font-family: 'Roboto Mono', monospace;
   margin-left: 5%;
-  color: #565656;
   line-height: 1em;
   text-align: center;
   text-decoration: none;
+}
+
+.footer a {
+  color: #336699;
 }
 
 p {
