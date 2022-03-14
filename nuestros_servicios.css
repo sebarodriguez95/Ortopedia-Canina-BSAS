@@ -1,380 +1,138 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Mono:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Mono&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
-img {
-  margin-left: 10%;
-  margin-top: 5%;
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
 }
 
-header .logo {
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 }
 
-.toggle {
-  position: relative;
-  margin-right: -10%;
-  width: 40px;
-  height: 60px;
-  background: url(https://i.ibb.co/SQ52TvP/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
 }
 
-.toggle.active {
-  background: url(https://i.ibb.co/ScTn052/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.showcase {
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 2;
+.container .card img{
+    width: 330px;
+    height: 220px;
 }
 
-.showcase.active {
-  right: 300px;
+
+.container .card h4{
+    font-weight: 600;
 }
 
-.showcase video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: overlay;
-  background-color: black;
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
 }
 
-.text {
-  position: relative;
-  z-index: 10;
-}
 
-.text h2 {
-  font-size: 5em;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
 
-.text h3 {
-  font-size: 4em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
 
-.text p {
-  font-size: 1.1em;
-  color: #fff;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
 
-.text a {
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #111;
-  letter-spacing: 2px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
 
-.text a:hover {
-  letter-spacing: 6px;
-}
 
-.body {
-  background: #f3f1f5;
-}
 
-.social {
-  position: absolute;
-  z-index: 10;
-  bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-.social li {
-  list-style: none;
-}
 
-.social li a {
-  display: inline-block;
-  margin-right: 20px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
 
-.social li a:hover {
-  -webkit-transform: scale(0.5) translateY(-15px);
-          transform: scale(0.5) translateY(-15px);
-}
 
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-.menu ul {
-  position: relative;
-}
 
-.menu ul li {
-  list-style: none;
-}
 
-.menu ul li a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #111;
-}
 
-h1 {
-  margin-left: 0%;
-  font-size: 28px;
-  color: #575692;
-  font-family: 'Roboto Mono', monospace;
-  text-align: center;
-}
 
-.container .box:hover .details {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-}
 
-.container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #fff;
-}
 
-.container .box {
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 
-.container .box .details {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  top: 10%;
-  left: 30px;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transition: -webkit-transform .9s;
-  transition: -webkit-transform .9s;
-  transition: transform .9s;
-  transition: transform .9s, -webkit-transform .9s;
-}
 
-.container .box .details .content {
-  position: absolute;
-  top: 25%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  text-align: center;
-  padding: 15px;
-  color: #fff;
-}
 
-.container .box .details .content h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  color: #fff;
-  font-family: 'Roboto Mono', monospace;
-}
 
-.container .box .details .content p {
-  font-family: 'Roboto Mono', monospace;
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-}
 
-.tifon {
-  max-width: 100%;
-  -webkit-transition: -webkit-transform 2.5s;
-  transition: -webkit-transform 2.5s;
-  transition: transform 2.5s;
-  transition: transform 2.5s, -webkit-transform 2.5s;
-}
 
-.imgBox {
-  overflow: hidden;
-  position: relative;
-  margin-left: -20px;
-}
 
-.imgBox :hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
 
-hr.solid {
-  border-top: 2px solid;
-  color: #575692;
-  border-radius: 5px;
-  width: 40%;
-  margin-left: 32%;
-}
 
-hr.rounded {
-  border-top: 2px solid;
-  color: #575692;
-  border-radius: 5px;
-  width: 15%;
-  margin-left: 45%;
-}
 
-footer {
-  color: #fff;
-  line-height: 1em;
-  text-align: center;
-}
 
-hr.solid {
-  border-top: 2px solid;
-  color: #575692;
-  border-radius: 5px;
-  width: 40%;
-  margin-left: 32%;
-}
 
-hr.rounded {
-  border-top: 2px solid;
-  color: #575692;
-  border-radius: 5px;
-  width: 15%;
-  margin-left: 45%;
-}
 
-.footer {
-  font-family: 'Roboto Mono', monospace;
-  margin-left: 5%;
-  line-height: 1em;
-  text-align: center;
-  text-decoration: none;
-}
 
-.footer a {
-  color: #336699;
-}
 
-p {
-  margin-top: 5%;
-  font-size: 15px;
-  text-align: center;
-}
 
-@media (max-width: 991px) {
-  .showcase,
-  .showcase header {
-    padding: 40px;
-  }
-  .text h2 {
-    font-size: 3em;
-  }
-  .text h3 {
-    font-size: 2em;
-  }
-}
-/*# sourceMappingURL=nuestros_servicios.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
