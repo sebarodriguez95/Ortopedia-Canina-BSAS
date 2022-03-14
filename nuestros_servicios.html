@@ -2,14 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Card con efecto hover - Magtimus</title>
+    <title>Nuestros servicios - Ortopedia Canina Buenos Aires</title>
     <link rel="stylesheet" href="nuestros_servicios.css">
+    <link rel="stylesheet" href="burger.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="">
-        <img class="logo" src="logo.png" alt="" height="50px" >
-    </div>
+        <img class="logo" src="img\logo.png" alt="" height="80px" >
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <nav>    
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nuestros_servicios.html">Nuestros servicios</a></li>
+            <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+            <li><a href="#">Contactanos</a></li>
+          </ul>  
+        </nav>
     <div class="container">
        
         <div class="card">
@@ -25,8 +41,26 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
             <a href="#">Leer más</a>
         </div>
-        
-    </div>
-    
+</div>   
+ <script src="index.js"></script>
 </body>
+<!--::::Pie de Pagina::::::-->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
