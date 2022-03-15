@@ -91,13 +91,14 @@ body {
             
           }
           > a {
+            text-align: center;
             text-decoration: none;
             color: $blackColor;
             font-weight: 600;
             font-family: 'Montserrat', sans-serif;
             display: block;
             padding: 20px;
-            font-size: 28px;
+            font-size: 20px;
             transition: background-color .5s;
             a:hover{
               color: #434343;

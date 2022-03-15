@@ -111,13 +111,14 @@ body input ~ nav > ul > li li:hover {
 }
 
 body input ~ nav > ul > li > a {
+  text-align: center;
   text-decoration: none;
   color: #020304;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   display: block;
   padding: 20px;
-  font-size: 28px;
+  font-size: 20px;
   -webkit-transition: background-color .5s;
   transition: background-color .5s;
 }
