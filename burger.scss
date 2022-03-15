@@ -79,20 +79,30 @@ body {
         text-align: center;
         position: absolute;
         top: 15%;
-        left: 20%;
+        left: 13%;
         right: 20%;
         > li {
           text-decoration: none;
           opacity: 0;
           transition: .5s;
           transition-delay: 0s;
+          li:hover{
+            color: #434343;
+            
+          }
           > a {
             text-decoration: none;
             color: $blackColor;
             font-weight: 600;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             display: block;
             padding: 20px;
+            font-size: 28px;
+            transition: background-color .5s;
+            a:hover{
+              color: #434343;
+              
+            }
           }
         }
       }
